@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSG</title>
+    <link rel="icon" href="img/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap" rel="stylesheet">
+</head>
+<style>
+  body{
+    font-family: 'Markazi Text', serif;
+    font-size: x-large;
+  }
+  body::before{
+    content: ' ';
+    display: block;
+    height: 30px;
+  }
+</style>
+<body>
+  <div class="navbar navbar-expand-md navbar-dark text-white fixed-top"  style="background: #192F5A;">
+    <div class="container">
+      <a href="#" class="navbar-brand">SSG</a>
+      <!-- علشان يطلع المربع الى اذا تصغرت الشاشة -->
+      <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#mainmenu">
+      <!-- الثلاث الخطوط -->
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+      <div class="collapse navbar-collapse" id="mainmenu">
+        <ul class="navbar-nav ms-auto" dir="rtl">
+          <li class="nav-item"><a href="#navbar" class="nav-link">الرئيسة</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">من نحن</a></li>
+          <li class="nav-item"><a href="#offers" class="nav-link">الخدمات</a></li>
+          <li class="nav-item"><a href="#call" class="nav-link">التواصل</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Hero -->
+  <section class="hero text-light text-center text-sm-start p-3" id="navbar"  style="background: #192F5A;">
+    <div class="container">
+      <div class="d-sm-flex align-items-center">
+        <div class="by-3">
+          <h1 class="display-12">مرحبا بكم في <samp style="color:#e4b95b;">مؤسسة التخصص الذكي للمقاولات العامة</samp></h1>
+          <p class="py-1">هنا يمكنك ان تجد معظم العمالة</p>
+          <button class="btn" style="background:#e4b95b;"><a href="#offers" class="nav-link">الخدمات</a></button>
+        </div>
+         <img class=" d-none d-sm-block img-fluid w-50" src="img/11m.jpg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- من نحن -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md">
+          <img src="img/about.jpeg" alt="" class="img-fluid w-100">
+        </div>
+        <div class="col-md py" dir="rtl">
+          <h2>من نحن</h2>
+          <p>تعد رؤية الشركة وخبرتها الاستثمارية أمرًا بالغ الأهمية في
+            توفير الضمان والثقة لشركاء الأعمال الجدد. لا يتوقف نجاح
+            التعاون على الاستقرار المالي والاستراتيجي فحسب ؛ بل
+            يتوقف أيضا على نقل الخبرة والمعرفة الصناعية التى يمكن
+            الاستفادة منها للاستفادة من الفرص وتسريع النمو للجميع
+            فى الرحلة المشتركة.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- الخدمات -->
+  <section class="py-3" id="offers" style="background: #192F5A;">
+    <div class="container">
+      <div>
+        <h4 class="text-center text-light p-2">الخدمات</h4>
+      </div>
+      <div class="row text-center">
+<!-- الصورة الاولى  -->
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card bg-dark text-light mb-3">
+<!-- الصورة -->
+            <img src="img/4m.jpeg" alt="" class="card-img-top" width="200" height="200">
+            <div class="card-body text-center">
+            <h4 class="card-title" style="color: #e4b95b;">معدات ثقيلة</h4>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">المزيد</button>
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel" style="color: black;">معدات ثقيلة</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="color: black;">
+        <h3>(حفارة - ونش - شاحنات رافعة شوكية)<br>نحن ملتزمون بتقديم خدمات استثنائية لتأجير المعدات الثقيلة لتلبية الاحتياجات المتنوعة لعملائنا الكرام</h3>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+      </div>
+     </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<!-- نهاية الصورة 1 -->
+        
+<!-- الصورة 2 -->
+<div class="col-sm-12 col-md-6 col-lg-4">
+  <div class="card bg-dark text-light mb-3">
+<!-- الصورة -->
+<img src="img/1m.jpg" alt="" class="card-img-top" width="200" height="200">
+<div class="card-body text-center">
+  <h4 class="card-title" style="color: #e4b95b;">سقالات</h4>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">المزيد</button>
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdrop1Label" style="color: black;">سقالات</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="color: black;">
+        <h3>نحن نفتخر بكوننا مزودًا رائدًا لخدمات السقالات المهنية. مع فريقنا المتخصص من فنيي السقالات ومشرفي السقالات ذوي المهارة العالية، نقدم حلولاً شاملة مصممة لتلبية متطلبات مشروعك الخاصة. ثق بنا لتقديم خدمات سقالات آمنة وموثوقة وفعالة تتجاوز معايير الصناعة</h3>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<!-- نهاية الصورة2 -->
+
+<!-- الصورة 3 -->
+<div class="col-sm-12 col-md-6 col-lg-4">
+  <div class="card bg-dark text-light mb-3">
+<!-- الصورة -->
+<img src="img/5m.jpg" alt="" class="card-img-top" width="200" height="200">
+<div class="card-body text-center">
+  <h4 class="card-title" style="color: #e4b95b;">إنشاء وصيانة طرق</h4>
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">المزيد</button>
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdrop3Label" style="color: black;">معدات ثقيلة</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="color: black;">
+        <h3>نحن متخصصون في تقديم خدمات شاملة لبناء وصيانة الطرق، وعقود مباشرة لبناء المنازل والمباني، وحلول التعاقد الفرعي. باستخدام خبرتنا والتزامنا بالتميز، نقدم مشاريع إنشاء عالية الجودة مصممة لتلبية احتياجات عملائنا الفريدة. ثق بنا لتحويل رؤيتك إلى واقع</h3>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<!-- نهاية الصورة3 -->
+
+<!-- الصورة4 -->
+<div class="col-sm-12 col-md-6 col-lg-4">
+  <div class="card bg-dark text-light mb-3">
+<!-- الصورة -->
+<img src="img/6m.jpg" alt="" class="card-img-top" width="200" height="200">
+<div class="card-body text-center">
+  <h4 class="card-title" style="color: #e4b95b;">توريد العمالة</h4>
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">المزيد</button>
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdrop4Label" style="color: black;">توريد العمالة</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="color: black;">
+        <h3>
+نحن نفتخر بأننا مزود موثوق به لمجموعة واسعة من الخدمات الصناعية المهنية. يتضمن فريقنا المتنوع من المحترفين ذوي المهارات العالية والخبرة الواسعة مسؤولين عن السلامة، ومستلمي التصاريح، والرافعين، وفنيي السقالات، ومشرفي السقالات، ومشغلي الرافعات الشوكية، ومشغلي الرافعات، ومشغلي الحفارات. بفضل التزامنا الثابت بالسلامة والكفاءة والتميز، نضمن تنفيذ مشاريعك الصناعية بسلاسة ونجاح</h3>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+</div>
+<!-- نهاية الصورة 4 -->
+
+
+<!-- الصورة5 -->
+<div class="col-sm-12 col-md-6 col-lg-4">
+  <div class="card bg-dark text-light mb-3">
+<!-- الصورة -->
+<img src="img/7m.jpg" alt="" class="card-img-top" width="200" height="200">
+<div class="card-body text-center">
+  <h4 class="card-title" style="color: #e4b95b;">إنشاء وصيانة المباني</h4>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop5">المزيد</button>
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdrop5Label" style="color: black;">إنشاءو صيانة المباني</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="color: black;">
+        <h3>نحن متخصصون في تقديم مشاريع البناء
+          الكبيرة المعقدة من خلال الإستفادة من الخبرة
+          فى المنازل والقوى العاملة الماهرة لدينا. تم تمكين
+          القوى العاملة من خلال الموارد الهائلة لشركة
+          التخصص الذكي من الموظفين والمصانع والمعدات،
+          وعززته شبكة من المكاتب العللية التي تقدم
+          مجموعة كاملة من خدمات الدعم الاحتياطية</h3>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<!-- نهاية الصورة 5-->
+
+<!-- الصورة 6 -->
+<div class="col-sm-12 col-md-6 col-lg-4">
+  <div class="card bg-dark text-light mb-3">
+<!-- الصورة -->
+<img src="img/8m.jpg" alt="" class="card-img-top" width="200" height="200">
+<div class="card-body text-center">
+  <h4 class="card-title" style="color: #e4b95b;">خدمات الفحوص اللا إتلافية</h4>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop6">المزيد</button>
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdrop6Label" style="color: black;">خدمات الفحوص اللا إتلافية</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="color: black;">
+        <h3>تُستخدم خدمات الفحوص اللا إتلافية الخاصة
+          بنا في جميع قطاعات الصناعة من النقل
+          والطيران إلى النفط والغاز وتوليد الطاقة. ويشمل
+          فحص المكونات والهياكل المعدنية وغير المعدنية
+          البوليمر والمركب. الخدمات مثل اختبار التصوير
+          الشعاعي والرقمي, اختبار اختراء السوائل. فحص
+          الجسيمات المغناطيسية, تفتيش الأبعاء</h3>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+
+  </section>
+
+
+ 
+<!-- التواصل-->
+<section id="call" class="py-1">
+  <div class="container">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-md">
+<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#contactModal" style="background: #e4b95b;">
+  التواصل
+</button>
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="contactModalLabel" style="color:#e4b95b; margin-left: auto;"> التواصل</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" dir="rtl">
+    <form class="w-100">
+
+      <div class="form-group">
+        <label for="">الاسم</label>
+        <input type="text" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label for="">الايميل</label>
+        <input type="email" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label for="">الموضوع</label>
+        <input type="text" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label for="">الرسالة</label>
+        <textarea name="Message" id="" cols="30" rows="10" class="form-control"></textarea>
+      </div>      
+    </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+        <button type="button" class="btn" style="background:#e4b95b ;">إرسال</button>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+      <div class="col-md py" dir="rtl">
+         <h3>نحن بانتظار رسائلكم، وسعداء بتواصلكم واستفساراتكم.</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- footer -->
+<footer class="py-2 text-white text-center position-relative" style="background: #192F5A;" dir="rtl">
+
+  <div class="container">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-md py">
+        <h4 style="color: #e4b95b;">من نحن</h4>
+        <p style="font-size: medium;">"رؤية الشركة وخبرتها الاستثمارية توفر الضمان والثقة لشركاء الأعمال الجدد. نجاح التعاون لا يعتمد فقط على الاستقرار المالي والاستراتيجي، بل يعتمد أيضًا على نقل الخبرة والمعرفة الصناعية للاستفادة من الفرص وتسريع النمو للجميع في الرحلة المشتركة."</p>
+      </div>
+      <div class="col-md py" dir="rtl">
+        <h4 style="color: #e4b95b;">العنوان</h4>
+        <a target="_blank" href="mailto:inf@ssgc-estcom.com" ><i class="bi bi-envelope" style="color: aliceblue;"></i></a>
+        <a target="_blank" href="https://maps.app.goo.gl/9Tz3aNuuprbttM7GA"><i class="bi bi-geo-alt" style="color: aliceblue;"></i></a>
+        <a target="_blank" href="https://wa.me/562668875"><i class="bi bi-whatsapp" style="color: aliceblue;"></i></a>
+        <a target="_blank" href="tel:0138191792"><i class="bi bi-telephone" style="color: aliceblue;"></i></a>
+      </div>
+    </div>
+  </div>
+  <hr class="container">
+  <p class="lead">
+      Copyright &copy;2023 <samp style="color: #e4b95b;">Lujain Hussain</Samp>
+    </p>
+    <!-- ايقونة يركبني فوق بداية الصفحة -->
+    <a href="#" class="position-absolute bottom-0 end-0 p-2">
+      <i class="bi bi-arrow-up-circle h6"  style="color:#e4b95b;"></i>
+    </a>
+  </div>  
+</footer>
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
